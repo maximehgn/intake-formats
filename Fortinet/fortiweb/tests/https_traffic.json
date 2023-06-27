@@ -1,0 +1,86 @@
+{
+  "input": {
+    "event": {
+      "created": "2021-05-09T10:06:03.546898Z",
+      "id": "123"
+    },
+    "log": {
+      "hostname": "abc"
+    },
+    "message": "time=11:11:11 log_id=0000 msg_id=1234 device_id=ABC vd=\"root\" timezone=\"(GMT+1:00)Brussels,Copenhagen,Madrid,Paris\" timezone_dayst=\"GMTc-2\" type=traffic subtype=\"https\" pri=notice proto=tcp service=https/tls1.2 status=success reason=none policy=extranet original_src=2.2.2.2 src=2.2.2.2 src_port=48152 dst=1.1.1.1 dst_port=80 http_request_time=0 http_response_time=0 http_request_bytes=549 http_response_bytes=11272 http_method=get http_url=\"/apiv1/wan/list?take=12&skip=84&orderBy=ponderationValue&sortDirection=desc&filter[]=monitor,equalsBool,true&filter[]=status,equal,DOWN\" http_agent=\"Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Raspbian Chromium/1.1.1.1 Chrome/1.1.1.1 Safari/537.36\" http_retcode=200 msg=\"HTTPS get request from 2.2.2.2:48152 to 1.1.1.1:80\" original_srccountry=\"Reserved\" srccountry=\"Reserved\" content_switch_name=\"none\" server_pool_name=\"extranet.sns-security.fr\" http_host=\"api.sns-security.fr\" user_name=\"Unknown\" http_refer=\"https://someting.fr/\" http_version=\"1.x\" dev_id=none cipher_suite=\"TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\""
+  },
+  "expected": {
+    "message": "time=11:11:11 log_id=0000 msg_id=1234 device_id=ABC vd=\"root\" timezone=\"(GMT+1:00)Brussels,Copenhagen,Madrid,Paris\" timezone_dayst=\"GMTc-2\" type=traffic subtype=\"https\" pri=notice proto=tcp service=https/tls1.2 status=success reason=none policy=extranet original_src=2.2.2.2 src=2.2.2.2 src_port=48152 dst=1.1.1.1 dst_port=80 http_request_time=0 http_response_time=0 http_request_bytes=549 http_response_bytes=11272 http_method=get http_url=\"/apiv1/wan/list?take=12&skip=84&orderBy=ponderationValue&sortDirection=desc&filter[]=monitor,equalsBool,true&filter[]=status,equal,DOWN\" http_agent=\"Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Raspbian Chromium/1.1.1.1 Chrome/1.1.1.1 Safari/537.36\" http_retcode=200 msg=\"HTTPS get request from 2.2.2.2:48152 to 1.1.1.1:80\" original_srccountry=\"Reserved\" srccountry=\"Reserved\" content_switch_name=\"none\" server_pool_name=\"extranet.sns-security.fr\" http_host=\"api.sns-security.fr\" user_name=\"Unknown\" http_refer=\"https://someting.fr/\" http_version=\"1.x\" dev_id=none cipher_suite=\"TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\"",
+    "event": {
+      "category": "https",
+      "kind": "traffic",
+      "message": "HTTPS get request from 2.2.2.2:48152 to 1.1.1.1:80"
+    },
+    "action": {
+      "outcome": "success",
+      "outcome_reason": "none"
+    },
+    "destination": {
+      "ip": "1.1.1.1",
+      "port": 80,
+      "address": "1.1.1.1"
+    },
+    "http": {
+      "request": {
+        "bytes": 549,
+        "method": "get",
+        "referrer": "https://someting.fr/"
+      },
+      "response": {
+        "bytes": 11272,
+        "status_code": 200
+      },
+      "version": "1.x"
+    },
+    "log": {
+      "level": "notice"
+    },
+    "network": {
+      "protocol": "tcp"
+    },
+    "rule": {
+      "ruleset": "extranet"
+    },
+    "source": {
+      "geo": {
+        "name": "Reserved"
+      },
+      "ip": "2.2.2.2",
+      "port": 48152,
+      "address": "2.2.2.2"
+    },
+    "tls": {
+      "cipher": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+    },
+    "tmp": {
+      "device_id": "ABC",
+      "log_id": "11:11:11"
+    },
+    "url": {
+      "path": "/apiv1/wan/list?take=12&skip=84&orderBy=ponderationValue&sortDirection=desc&filter[]=monitor,equalsBool,true&filter[]=status,equal,DOWN",
+      "username": "Unknown"
+    },
+    "user_agent": {
+      "original": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Raspbian Chromium/1.1.1.1 Chrome/1.1.1.1 Safari/537.36",
+      "device": {
+        "name": "Other"
+      },
+      "name": "Chromium",
+      "version": "72.0.3626",
+      "os": {
+        "name": "Linux"
+      }
+    },
+    "related": {
+      "ip": [
+        "1.1.1.1",
+        "2.2.2.2"
+      ]
+    }
+  }
+}

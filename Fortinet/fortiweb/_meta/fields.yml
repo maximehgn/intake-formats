@@ -1,0 +1,9 @@
+tmp.device_id:
+  name: tmp.device_id
+  description: "The device identifier"
+  type: keyword
+
+tmp.log_id:
+  name: tmp.log_id
+  description: "The log id"
+  type: keyword
