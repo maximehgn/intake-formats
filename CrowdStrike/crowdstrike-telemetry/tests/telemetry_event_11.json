@@ -23,23 +23,31 @@
     "agent": {
       "id": "111111111111111"
     },
+    "crowdstrike": {
+      "customer_id": "222222222222222222222"
+    },
     "source": {
-      "ip": "2001:cafe:37:ed:6f:51:7d:67",
       "nat": {
-        "ip": "4.3.2.1",
-        "port": 5353
+        "port": 5353,
+        "ip": "4.3.2.1"
       },
+      "ip": "2001:cafe:37:ed:6f:51:7d:67",
       "address": "2001:cafe:37:ed:6f:51:7d:67"
     },
     "destination": {
-      "ip": "2001:cafe:d:4c:20:88:9d:12",
       "nat": {
         "port": 5353
       },
+      "ip": "2001:cafe:d:4c:20:88:9d:12",
       "address": "2001:cafe:d:4c:20:88:9d:12"
     },
-    "crowdstrike": {
-      "customer_id": "222222222222222222222"
+    "host": {
+      "ip": [
+        "4.3.2.1"
+      ],
+      "os": {
+        "platform": "mac"
+      }
     },
     "related": {
       "ip": [

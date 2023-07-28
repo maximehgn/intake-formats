@@ -23,27 +23,37 @@
     "process": {
       "pid": 6840
     },
+    "agent": {
+      "id": "111111111111111"
+    },
     "file": {
       "hash": {
         "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
       }
     },
-    "agent": {
-      "id": "111111111111111"
+    "crowdstrike": {
+      "customer_id": "222222222222222222222"
     },
     "source": {
       "nat": {
         "ip": "4.3.2.1"
       }
     },
-    "crowdstrike": {
-      "customer_id": "222222222222222222222"
+    "host": {
+      "ip": [
+        "4.3.2.1"
+      ],
+      "os": {
+        "platform": "mac"
+      }
     },
     "related": {
       "hash": [
         "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
       ],
-      "ip": ["4.3.2.1"]
+      "ip": [
+        "4.3.2.1"
+      ]
     }
   }
 }

@@ -30,17 +30,29 @@
     "agent": {
       "id": "111111111111111"
     },
+    "crowdstrike": {
+      "customer_id": "222222222222222222222"
+    },
     "source": {
       "nat": {
         "ip": "4.3.2.1"
       }
     },
-    "crowdstrike": {
-      "customer_id": "222222222222222222222"
+    "host": {
+      "ip": [
+        "4.3.2.1"
+      ],
+      "os": {
+        "platform": "win"
+      }
     },
     "related": {
-      "ip": ["4.3.2.1"],
-      "user": ["JOHNDOE$"]
+      "ip": [
+        "4.3.2.1"
+      ],
+      "user": [
+        "JOHNDOE$"
+      ]
     }
   }
 }

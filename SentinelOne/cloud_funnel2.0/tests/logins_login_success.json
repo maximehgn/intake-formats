@@ -74,7 +74,7 @@
         "working_directory": "C:\\Windows\\System32",
         "start": "2023-04-04T09:47:38.531000Z",
         "code_signature": {
-          "exists": true,
+          "exists": "true",
           "subject_name": "MICROSOFT WINDOWS"
         },
         "parent": {
@@ -172,6 +172,10 @@
       "name": "john.doe",
       "domain": "WORKGROUP",
       "id": "S-1-5-18",
+      "target": {
+        "name": "john.doe",
+        "domain": "WORKGROUP"
+      },
       "roles": [
         "admin"
       ]

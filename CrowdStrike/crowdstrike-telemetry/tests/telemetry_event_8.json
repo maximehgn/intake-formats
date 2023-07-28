@@ -26,27 +26,37 @@
         "pid": 0
       }
     },
+    "agent": {
+      "id": "111111111111111"
+    },
     "file": {
       "hash": {
         "sha256": "be688838ca8686e5c90689bf2ab585cef1137c999b48c70b92f67a5c34dc15697b5d11c982ed6d71be1e1e7f7b4e0733884aa97c3f7a339a8ed03577cf74be09"
       }
     },
-    "agent": {
-      "id": "111111111111111"
+    "crowdstrike": {
+      "customer_id": "222222222222222222222"
     },
     "source": {
       "nat": {
         "ip": "4.3.2.1"
       }
     },
-    "crowdstrike": {
-      "customer_id": "222222222222222222222"
+    "host": {
+      "ip": [
+        "4.3.2.1"
+      ],
+      "os": {
+        "platform": "mac"
+      }
     },
     "related": {
       "hash": [
         "be688838ca8686e5c90689bf2ab585cef1137c999b48c70b92f67a5c34dc15697b5d11c982ed6d71be1e1e7f7b4e0733884aa97c3f7a339a8ed03577cf74be09"
       ],
-      "ip": ["4.3.2.1"]
+      "ip": [
+        "4.3.2.1"
+      ]
     }
   }
 }

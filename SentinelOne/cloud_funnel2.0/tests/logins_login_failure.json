@@ -74,7 +74,7 @@
         "working_directory": "C:\\Windows\\System32",
         "start": "2023-03-21T10:33:50.438000Z",
         "code_signature": {
-          "exists": true,
+          "exists": "true",
           "subject_name": "MICROSOFT WINDOWS"
         },
         "parent": {
@@ -156,7 +156,11 @@
     "user": {
       "name": "USER",
       "domain": "-",
-      "id": "S-1-0-0"
+      "id": "S-1-0-0",
+      "target": {
+        "name": "USER",
+        "domain": "-"
+      }
     },
     "source": {
       "ip": "180.163.86.35",

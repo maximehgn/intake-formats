@@ -34,23 +34,31 @@
       "pid": 6812,
       "args": "MallocSpaceEfficient=1 XPC_SERVICE_NAME=com.apple.ManagedClient PATH=/usr/bin:/bin:/usr/sbin:/sbin XPC_FLAGS=1"
     },
-    "file": {
-      "hash": {
-        "md5": "68b329da9893e34099c7d8ad5cb9c940",
-        "sha1": "0000000000000000000000000000000000000000",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
-      }
-    },
     "agent": {
       "id": "111111111111111"
+    },
+    "file": {
+      "hash": {
+        "sha1": "0000000000000000000000000000000000000000",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "md5": "68b329da9893e34099c7d8ad5cb9c940"
+      }
+    },
+    "crowdstrike": {
+      "customer_id": "222222222222222222222"
     },
     "source": {
       "nat": {
         "ip": "4.3.2.1"
       }
     },
-    "crowdstrike": {
-      "customer_id": "222222222222222222222"
+    "host": {
+      "ip": [
+        "4.3.2.1"
+      ],
+      "os": {
+        "platform": "mac"
+      }
     },
     "related": {
       "hash": [
@@ -58,7 +66,9 @@
         "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
         "68b329da9893e34099c7d8ad5cb9c940"
       ],
-      "ip": ["4.3.2.1"]
+      "ip": [
+        "4.3.2.1"
+      ]
     }
   }
 }

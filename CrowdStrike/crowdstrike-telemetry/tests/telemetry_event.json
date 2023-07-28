@@ -33,26 +33,34 @@
       "start": "2022-08-20T19:06:04.014000Z",
       "pid": 4164
     },
-    "file": {
-      "hash": {
-        "md5": "33ee2de3cd0bdf7d6488a920f4f4eddb",
-        "sha1": "0000000000000000000000000000000000000000",
-        "sha256": "e9c5a42bdcca52bd24b095eae55dbc5c63a0918fa9b43717e389b470c4accdf6"
-      }
-    },
     "user": {
       "id": "S-1-5-19"
     },
     "agent": {
       "id": "12c684659c3842e19f0bfb2b23037bbd"
     },
+    "file": {
+      "hash": {
+        "sha1": "0000000000000000000000000000000000000000",
+        "sha256": "e9c5a42bdcca52bd24b095eae55dbc5c63a0918fa9b43717e389b470c4accdf6",
+        "md5": "33ee2de3cd0bdf7d6488a920f4f4eddb"
+      }
+    },
+    "crowdstrike": {
+      "customer_id": "5ddb0407bef249c19c7a975f17979a1f"
+    },
     "source": {
       "nat": {
         "ip": "44.234.227.80"
       }
     },
-    "crowdstrike": {
-      "customer_id": "5ddb0407bef249c19c7a975f17979a1f"
+    "host": {
+      "ip": [
+        "44.234.227.80"
+      ],
+      "os": {
+        "platform": "win"
+      }
     },
     "related": {
       "hash": [
@@ -60,7 +68,9 @@
         "33ee2de3cd0bdf7d6488a920f4f4eddb",
         "e9c5a42bdcca52bd24b095eae55dbc5c63a0918fa9b43717e389b470c4accdf6"
       ],
-      "ip": ["44.234.227.80"]
+      "ip": [
+        "44.234.227.80"
+      ]
     }
   }
 }

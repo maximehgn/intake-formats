@@ -23,19 +23,29 @@
     "agent": {
       "id": "111111111111111"
     },
-    "source": {
-      "nat": {
-        "ip": "4.3.2.1"
-      }
-    },
     "file": {
       "path": "\\Device\\HarddiskVolume3\\Users\\j.doe\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cache\\Cache_Data\\f_010051"
     },
     "crowdstrike": {
       "customer_id": "222222222222222222222"
     },
+    "source": {
+      "nat": {
+        "ip": "4.3.2.1"
+      }
+    },
+    "host": {
+      "ip": [
+        "4.3.2.1"
+      ],
+      "os": {
+        "platform": "win"
+      }
+    },
     "related": {
-      "ip": ["4.3.2.1"]
+      "ip": [
+        "4.3.2.1"
+      ]
     }
   }
 }
